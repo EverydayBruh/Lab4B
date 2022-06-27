@@ -50,7 +50,6 @@ int timing()
     char* s;
     int k;
     FILE* fb;
-    Node* root = NULL;
     char* key;
     for(int n = 1; n<=3; n++)
     {
@@ -94,7 +93,7 @@ int timing()
                     {
                         key = randString(5);
                         k = 0;
-                        findByKey(root, key, &k, 1);
+                        findByKey(tree.root, key, &k, 1);
                         free(key);
                     }
                     break;
